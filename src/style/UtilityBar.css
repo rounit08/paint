@@ -1,0 +1,153 @@
+.utility {
+  background-color: rgb(129, 196, 255, 7.3);
+  height: 100%;
+  color: #000000;
+  width: 60%;
+  border-radius: 12px;
+  border: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: auto;
+}
+
+.colorSection {
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 50px;
+  box-shadow: 5px 5px 10px #6ea7d9, -5px -5px 10px #94e1ff;
+}
+.colorChoice {
+  height: 50px;
+  width: 50px;
+  border: 7px double white;
+  border-radius: 50%;
+  border-color: white;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.black {
+  background-color: black;
+}
+.green {
+  background-color: green;
+}
+
+.white {
+  background-color: white;
+}
+.yellow {
+  background-color: yellow;
+}
+.pink {
+  background-color: pink;
+}
+.blue {
+  background-color: blue;
+}
+.strokeWidthSection {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 10px #6ea7d9, -5px -5px 10px #94e1ff;
+  border-radius: 50px;
+  align-items: center;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 60%;
+  height: 10px;
+  background: black;
+  border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: purple;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.strokeWidthSection P {
+  font-size: 1.2em;
+  margin-top: 2px;
+}
+
+.strokeProperties {
+  width: 90%;
+  align-items: center;
+  display: flex;
+}
+
+.strokeColorSelection {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.strokeColor {
+  height: 30px;
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.clearSection {
+  align-self: center;
+}
+
+@media only screen and (max-width: 567px) {
+  .colorChoice {
+    height: 25px;
+    width: 25px;
+    border: 1px solid white;
+  }
+  .colorSectionColors {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin-top: -2em;
+  }
+  .clearSection {
+    width: 20%;
+  }
+  .clearSection button {
+    font-size: 0.7em;
+  }
+  .colorSection {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+  .strokeProperties {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+  }
+  .utility {
+    justify-content: space-between;
+    width: 90%;
+  }
+  .strokeColor {
+    height: 25px;
+    width: 25px;
+  }
+  .strokeColorSelection {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 0.2fr);
+    gap: 10px;
+  }
+  .strokeWidthSection {
+    width: 30%;
+    padding: 10px;
+  }
+}
